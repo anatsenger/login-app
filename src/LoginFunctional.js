@@ -7,7 +7,6 @@ const LoginFunctional = () => {
   const [message, setMessage] = useState('');
 
   const handleLogin = () => {
-    // Verifica se o email e senha existem no array de contas
     const user = accounts.find((account) => account.email === email && account.password === password);
     
     if (user) {
